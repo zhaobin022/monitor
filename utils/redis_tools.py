@@ -11,3 +11,4 @@ def redis_conn():
 
 if __name__ == '__main__':
     r = redis_conn()
+    r.exists()

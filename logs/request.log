@@ -16029,3 +16029,1071 @@ Traceback (most recent call last):
   File "/opt/monitor/background/alert_handler.py", line 144, in process
     alert_dic['client_id'] = self.client_id
 NameError: global name 'alert_dic' is not defined
+[2016-08-26 01:49:54,526][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 01:50:04,585][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 01:50:14,600][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 01:50:24,639][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 01:50:34,680][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 01:50:44,721][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 01:50:54,761][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 01:51:04,855][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 01:51:14,849][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 01:51:24,931][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 01:51:34,962][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 01:51:45,021][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 01:51:55,030][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 01:52:05,083][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 01:52:15,150][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 02:05:47,907][404][<WSGIRequest: GET '/'>] Not Found: /
+[2016-08-26 02:05:48,003][404][<WSGIRequest: GET '/favicon.ico'>] Not Found: /favicon.ico
+[2016-08-26 02:10:00,081][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 02:10:10,237][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 02:10:20,150][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 02:10:30,202][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 02:10:40,307][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 02:10:50,322][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 02:11:00,367][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 02:11:10,384][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 02:11:20,445][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 02:11:30,491][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 02:11:40,515][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 02:11:50,587][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 02:12:00,599][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 02:12:10,621][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 02:12:20,655][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 02:39:57,691][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 02:40:07,731][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 02:40:17,765][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 02:40:27,799][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 02:40:37,845][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 02:40:47,885][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 02:40:57,919][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 02:41:07,936][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 02:41:17,987][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 02:41:28,101][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 02:41:38,120][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 02:41:48,163][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 02:41:58,192][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 02:42:08,239][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 02:42:18,266][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'veth41cebeb'
+[2016-08-26 06:47:15,522][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 42, in service_data_report
+    alert_handler.process()
+  File "/opt/monitor/background/alert_handler.py", line 104, in process
+    expression_ret = self.deal_expression(expression)
+  File "/opt/monitor/background/alert_handler.py", line 48, in deal_expression
+    ret = data_calc_func(data_set,expression)
+  File "/opt/monitor/background/alert_handler.py", line 84, in get_avg
+    ret_dic[key][sub_key].append(float(sub_val))
+KeyError: u'eth0'
+[2016-08-26 06:55:51,296][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'lo'
+[2016-08-26 06:56:01,318][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'lo'
+[2016-08-26 06:56:11,354][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'lo'
+[2016-08-26 06:56:21,459][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'lo'
+[2016-08-26 06:56:31,483][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'lo'
+[2016-08-26 06:56:41,575][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'lo'
+[2016-08-26 06:56:51,561][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'lo'
+[2016-08-26 06:57:01,634][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 39, in service_data_report
+    data_handler.process()
+  File "/opt/monitor/background/data_handler.py", line 130, in process
+    self.optimized_data(current_redis_key, redis_slice)
+  File "/opt/monitor/background/data_handler.py", line 54, in optimized_data
+    temp_dic[k][sub_key].append(round(float(sub_val),2))
+KeyError: u'lo'
+[2016-08-26 07:30:35,661][500][<WSGIRequest: GET '/api/client/config/1/'>] Internal Server Error: /api/client/config/1/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/monitor/background/views.py", line 20, in client_configs
+    client_config = client_handler.get_configs(client_id)
+  File "/opt/monitor/background/client_handler.py", line 15, in get_configs
+    host = models.Host.objects.get(id=client_id)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 379, in get
+    num = len(clone)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 1085, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/compiler.py", line 824, in execute_sql
+    sql, params = self.as_sql()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/compiler.py", line 376, in as_sql
+    where, w_params = self.compile(self.where) if self.where is not None else ("", [])
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/compiler.py", line 353, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/where.py", line 79, in as_sql
+    sql, params = compiler.compile(child)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/compiler.py", line 353, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/lookups.py", line 155, in as_sql
+    lhs_sql, params = self.process_lhs(compiler, connection)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/lookups.py", line 148, in process_lhs
+    db_type = self.lhs.output_field.db_type(connection=connection)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py", line 629, in db_type
+    return connection.data_types[self.get_internal_type()] % data
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/mysql/base.py", line 185, in data_types
+    if self.features.supports_microsecond_precision:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/mysql/features.py", line 54, in supports_microsecond_precision
+    return self.connection.mysql_version >= (5, 6, 4) and Database.version_info >= (1, 2, 5)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/mysql/base.py", line 369, in mysql_version
+    with self.temporary_connection() as cursor:
+  File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 564, in temporary_connection
+    cursor = self.cursor()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 231, in cursor
+    cursor = self.make_debug_cursor(self._cursor())
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 204, in _cursor
+    self.ensure_connection()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 171, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/mysql/base.py", line 265, in get_new_connection
+    conn = Database.connect(**conn_params)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 187, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2002, "Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)")
+[2016-08-26 07:32:22,730][500][<WSGIRequest: GET '/api/client/config/1/'>] Internal Server Error: /api/client/config/1/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/monitor/background/views.py", line 20, in client_configs
+    client_config = client_handler.get_configs(client_id)
+  File "/opt/monitor/background/client_handler.py", line 15, in get_configs
+    host = models.Host.objects.get(id=client_id)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 379, in get
+    num = len(clone)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 1085, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/compiler.py", line 824, in execute_sql
+    sql, params = self.as_sql()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/compiler.py", line 376, in as_sql
+    where, w_params = self.compile(self.where) if self.where is not None else ("", [])
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/compiler.py", line 353, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/where.py", line 79, in as_sql
+    sql, params = compiler.compile(child)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/compiler.py", line 353, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/lookups.py", line 155, in as_sql
+    lhs_sql, params = self.process_lhs(compiler, connection)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/lookups.py", line 148, in process_lhs
+    db_type = self.lhs.output_field.db_type(connection=connection)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py", line 629, in db_type
+    return connection.data_types[self.get_internal_type()] % data
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/mysql/base.py", line 185, in data_types
+    if self.features.supports_microsecond_precision:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/mysql/features.py", line 54, in supports_microsecond_precision
+    return self.connection.mysql_version >= (5, 6, 4) and Database.version_info >= (1, 2, 5)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/mysql/base.py", line 369, in mysql_version
+    with self.temporary_connection() as cursor:
+  File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 564, in temporary_connection
+    cursor = self.cursor()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 231, in cursor
+    cursor = self.make_debug_cursor(self._cursor())
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 204, in _cursor
+    self.ensure_connection()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 171, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/mysql/base.py", line 265, in get_new_connection
+    conn = Database.connect(**conn_params)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 187, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2002, "Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)")

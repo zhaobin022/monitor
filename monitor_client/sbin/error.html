@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="robots" content="NONE,NOARCHIVE">
-  <title>NameError at /api/client/service/report/</title>
+  <title>KeyError at /api/client/service/report/</title>
   <style type="text/css">
     html * { padding:0; margin:0; }
     body * { padding:10px 20px; }
@@ -123,8 +123,8 @@
 </head>
 <body>
 <div id="summary">
-  <h1>NameError at /api/client/service/report/</h1>
-  <pre class="exception_value">global name &#39;alert_dic&#39; is not defined</pre>
+  <h1>KeyError at /api/client/service/report/</h1>
+  <pre class="exception_value">u&#39;lo&#39;</pre>
   <table class="meta">
 
     <tr>
@@ -143,19 +143,19 @@
 
     <tr>
       <th>Exception Type:</th>
-      <td>NameError</td>
+      <td>KeyError</td>
     </tr>
 
 
     <tr>
       <th>Exception Value:</th>
-      <td><pre>global name &#39;alert_dic&#39; is not defined</pre></td>
+      <td><pre>u&#39;lo&#39;</pre></td>
     </tr>
 
 
     <tr>
       <th>Exception Location:</th>
-      <td>/opt/monitor/background/alert_handler.py in process, line 144</td>
+      <td>/opt/monitor/background/data_handler.py in optimized_data, line 54</td>
     </tr>
 
     <tr>
@@ -184,7 +184,7 @@
     </tr>
     <tr>
       <th>Server time:</th>
-      <td>Tue, 23 Aug 2016 09:42:57 +0000</td>
+      <td>Fri, 26 Aug 2016 06:57:01 +0000</td>
     </tr>
   </table>
 </div>
@@ -205,43 +205,43 @@
           <code>/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py</code> in <code>inner</code>
 
           
-            <div class="context" id="c139829909110656">
+            <div class="context" id="c140665879949392">
               
-                <ol start="32" class="pre-context" id="pre139829909110656">
+                <ol start="32" class="pre-context" id="pre140665879949392">
                 
-                  <li onclick="toggle('pre139829909110656', 'post139829909110656')"><pre>    This decorator is automatically applied to all middleware to ensure that</pre></li>
+                  <li onclick="toggle('pre140665879949392', 'post140665879949392')"><pre>    This decorator is automatically applied to all middleware to ensure that</pre></li>
                 
-                  <li onclick="toggle('pre139829909110656', 'post139829909110656')"><pre>    no middleware leaks an exception and that the next middleware in the stack</pre></li>
+                  <li onclick="toggle('pre140665879949392', 'post140665879949392')"><pre>    no middleware leaks an exception and that the next middleware in the stack</pre></li>
                 
-                  <li onclick="toggle('pre139829909110656', 'post139829909110656')"><pre>    can rely on getting a response instead of an exception.</pre></li>
+                  <li onclick="toggle('pre140665879949392', 'post140665879949392')"><pre>    can rely on getting a response instead of an exception.</pre></li>
                 
-                  <li onclick="toggle('pre139829909110656', 'post139829909110656')"><pre>    &quot;&quot;&quot;</pre></li>
+                  <li onclick="toggle('pre140665879949392', 'post140665879949392')"><pre>    &quot;&quot;&quot;</pre></li>
                 
-                  <li onclick="toggle('pre139829909110656', 'post139829909110656')"><pre>    @wraps(get_response, assigned=available_attrs(get_response))</pre></li>
+                  <li onclick="toggle('pre140665879949392', 'post140665879949392')"><pre>    @wraps(get_response, assigned=available_attrs(get_response))</pre></li>
                 
-                  <li onclick="toggle('pre139829909110656', 'post139829909110656')"><pre>    def inner(request):</pre></li>
+                  <li onclick="toggle('pre140665879949392', 'post140665879949392')"><pre>    def inner(request):</pre></li>
                 
-                  <li onclick="toggle('pre139829909110656', 'post139829909110656')"><pre>        try:</pre></li>
+                  <li onclick="toggle('pre140665879949392', 'post140665879949392')"><pre>        try:</pre></li>
                 
                 </ol>
               
               <ol start="39" class="context-line">
-                <li onclick="toggle('pre139829909110656', 'post139829909110656')"><pre>
+                <li onclick="toggle('pre140665879949392', 'post140665879949392')"><pre>
             response = get_response(request)</pre> <span>...</span></li></ol>
               
-                <ol start='40' class="post-context" id="post139829909110656">
+                <ol start='40' class="post-context" id="post140665879949392">
                   
-                  <li onclick="toggle('pre139829909110656', 'post139829909110656')"><pre>        except Exception as exc:</pre></li>
+                  <li onclick="toggle('pre140665879949392', 'post140665879949392')"><pre>        except Exception as exc:</pre></li>
                   
-                  <li onclick="toggle('pre139829909110656', 'post139829909110656')"><pre>            response = response_for_exception(request, exc)</pre></li>
+                  <li onclick="toggle('pre140665879949392', 'post140665879949392')"><pre>            response = response_for_exception(request, exc)</pre></li>
                   
-                  <li onclick="toggle('pre139829909110656', 'post139829909110656')"><pre>        return response</pre></li>
+                  <li onclick="toggle('pre140665879949392', 'post140665879949392')"><pre>        return response</pre></li>
                   
-                  <li onclick="toggle('pre139829909110656', 'post139829909110656')"><pre>    return inner</pre></li>
+                  <li onclick="toggle('pre140665879949392', 'post140665879949392')"><pre>    return inner</pre></li>
                   
-                  <li onclick="toggle('pre139829909110656', 'post139829909110656')"><pre></pre></li>
+                  <li onclick="toggle('pre140665879949392', 'post140665879949392')"><pre></pre></li>
                   
-                  <li onclick="toggle('pre139829909110656', 'post139829909110656')"><pre></pre></li>
+                  <li onclick="toggle('pre140665879949392', 'post140665879949392')"><pre></pre></li>
                   
               </ol>
               
@@ -251,10 +251,10 @@
           
             <div class="commands">
                 
-                    <a href="#" onclick="return varToggle(this, '139829909110656')"><span>&#x25b6;</span> Local vars</a>
+                    <a href="#" onclick="return varToggle(this, '140665879949392')"><span>&#x25b6;</span> Local vars</a>
                 
             </div>
-            <table class="vars" id="v139829909110656">
+            <table class="vars" id="v140665879949392">
               <thead>
                 <tr>
                   <th>Variable</th>
@@ -265,12 +265,12 @@
                 
                   <tr>
                     <td>exc</td>
-                    <td class="code"><pre>NameError(&quot;global name &#39;alert_dic&#39; is not defined&quot;,)</pre></td>
+                    <td class="code"><pre>KeyError(u&#39;lo&#39;,)</pre></td>
                   </tr>
                 
                   <tr>
                     <td>get_response</td>
-                    <td class="code"><pre>&lt;bound method WSGIHandler._get_response of &lt;django.core.handlers.wsgi.WSGIHandler object at 0x7f2cb2f9e090&gt;&gt;</pre></td>
+                    <td class="code"><pre>&lt;bound method WSGIHandler._get_response of &lt;django.core.handlers.wsgi.WSGIHandler object at 0x7fef5ab91ed0&gt;&gt;</pre></td>
                   </tr>
                 
                   <tr>
@@ -288,43 +288,43 @@
           <code>/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py</code> in <code>_get_response</code>
 
           
-            <div class="context" id="c139829909107632">
+            <div class="context" id="c140665879950400">
               
-                <ol start="180" class="pre-context" id="pre139829909107632">
+                <ol start="180" class="pre-context" id="pre140665879950400">
                 
-                  <li onclick="toggle('pre139829909107632', 'post139829909107632')"><pre>                break</pre></li>
+                  <li onclick="toggle('pre140665879950400', 'post140665879950400')"><pre>                break</pre></li>
                 
-                  <li onclick="toggle('pre139829909107632', 'post139829909107632')"><pre></pre></li>
+                  <li onclick="toggle('pre140665879950400', 'post140665879950400')"><pre></pre></li>
                 
-                  <li onclick="toggle('pre139829909107632', 'post139829909107632')"><pre>        if response is None:</pre></li>
+                  <li onclick="toggle('pre140665879950400', 'post140665879950400')"><pre>        if response is None:</pre></li>
                 
-                  <li onclick="toggle('pre139829909107632', 'post139829909107632')"><pre>            wrapped_callback = self.make_view_atomic(callback)</pre></li>
+                  <li onclick="toggle('pre140665879950400', 'post140665879950400')"><pre>            wrapped_callback = self.make_view_atomic(callback)</pre></li>
                 
-                  <li onclick="toggle('pre139829909107632', 'post139829909107632')"><pre>            try:</pre></li>
+                  <li onclick="toggle('pre140665879950400', 'post140665879950400')"><pre>            try:</pre></li>
                 
-                  <li onclick="toggle('pre139829909107632', 'post139829909107632')"><pre>                response = wrapped_callback(request, *callback_args, **callback_kwargs)</pre></li>
+                  <li onclick="toggle('pre140665879950400', 'post140665879950400')"><pre>                response = wrapped_callback(request, *callback_args, **callback_kwargs)</pre></li>
                 
-                  <li onclick="toggle('pre139829909107632', 'post139829909107632')"><pre>            except Exception as e:</pre></li>
+                  <li onclick="toggle('pre140665879950400', 'post140665879950400')"><pre>            except Exception as e:</pre></li>
                 
                 </ol>
               
               <ol start="187" class="context-line">
-                <li onclick="toggle('pre139829909107632', 'post139829909107632')"><pre>
+                <li onclick="toggle('pre140665879950400', 'post140665879950400')"><pre>
                 response = self.process_exception_by_middleware(e, request)</pre> <span>...</span></li></ol>
               
-                <ol start='188' class="post-context" id="post139829909107632">
+                <ol start='188' class="post-context" id="post140665879950400">
                   
-                  <li onclick="toggle('pre139829909107632', 'post139829909107632')"><pre></pre></li>
+                  <li onclick="toggle('pre140665879950400', 'post140665879950400')"><pre></pre></li>
                   
-                  <li onclick="toggle('pre139829909107632', 'post139829909107632')"><pre>        # Complain if the view returned None (a common error).</pre></li>
+                  <li onclick="toggle('pre140665879950400', 'post140665879950400')"><pre>        # Complain if the view returned None (a common error).</pre></li>
                   
-                  <li onclick="toggle('pre139829909107632', 'post139829909107632')"><pre>        if response is None:</pre></li>
+                  <li onclick="toggle('pre140665879950400', 'post140665879950400')"><pre>        if response is None:</pre></li>
                   
-                  <li onclick="toggle('pre139829909107632', 'post139829909107632')"><pre>            if isinstance(callback, types.FunctionType):    # FBV</pre></li>
+                  <li onclick="toggle('pre140665879950400', 'post140665879950400')"><pre>            if isinstance(callback, types.FunctionType):    # FBV</pre></li>
                   
-                  <li onclick="toggle('pre139829909107632', 'post139829909107632')"><pre>                view_name = callback.__name__</pre></li>
+                  <li onclick="toggle('pre140665879950400', 'post140665879950400')"><pre>                view_name = callback.__name__</pre></li>
                   
-                  <li onclick="toggle('pre139829909107632', 'post139829909107632')"><pre>            else:                                           # CBV</pre></li>
+                  <li onclick="toggle('pre140665879950400', 'post140665879950400')"><pre>            else:                                           # CBV</pre></li>
                   
               </ol>
               
@@ -334,10 +334,10 @@
           
             <div class="commands">
                 
-                    <a href="#" onclick="return varToggle(this, '139829909107632')"><span>&#x25b6;</span> Local vars</a>
+                    <a href="#" onclick="return varToggle(this, '140665879950400')"><span>&#x25b6;</span> Local vars</a>
                 
             </div>
-            <table class="vars" id="v139829909107632">
+            <table class="vars" id="v140665879950400">
               <thead>
                 <tr>
                   <th>Variable</th>
@@ -348,7 +348,7 @@
                 
                   <tr>
                     <td>callback</td>
-                    <td class="code"><pre>&lt;function service_data_report at 0x7f2cb032d320&gt;</pre></td>
+                    <td class="code"><pre>&lt;function service_data_report at 0x7fef58141410&gt;</pre></td>
                   </tr>
                 
                   <tr>
@@ -363,12 +363,12 @@
                 
                   <tr>
                     <td>e</td>
-                    <td class="code"><pre>NameError(&quot;global name &#39;alert_dic&#39; is not defined&quot;,)</pre></td>
+                    <td class="code"><pre>KeyError(u&#39;lo&#39;,)</pre></td>
                   </tr>
                 
                   <tr>
                     <td>middleware_method</td>
-                    <td class="code"><pre>&lt;bound method CsrfViewMiddleware.process_view of &lt;django.middleware.csrf.CsrfViewMiddleware object at 0x7f2cb300bd90&gt;&gt;</pre></td>
+                    <td class="code"><pre>&lt;bound method CsrfViewMiddleware.process_view of &lt;django.middleware.csrf.CsrfViewMiddleware object at 0x7fef5aba3110&gt;&gt;</pre></td>
                   </tr>
                 
                   <tr>
@@ -393,12 +393,12 @@
                 
                   <tr>
                     <td>self</td>
-                    <td class="code"><pre>&lt;django.core.handlers.wsgi.WSGIHandler object at 0x7f2cb2f9e090&gt;</pre></td>
+                    <td class="code"><pre>&lt;django.core.handlers.wsgi.WSGIHandler object at 0x7fef5ab91ed0&gt;</pre></td>
                   </tr>
                 
                   <tr>
                     <td>wrapped_callback</td>
-                    <td class="code"><pre>&lt;function service_data_report at 0x7f2cb032d320&gt;</pre></td>
+                    <td class="code"><pre>&lt;function service_data_report at 0x7fef58141410&gt;</pre></td>
                   </tr>
                 
               </tbody>
@@ -411,43 +411,43 @@
           <code>/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py</code> in <code>_get_response</code>
 
           
-            <div class="context" id="c139829909108856">
+            <div class="context" id="c140665879322776">
               
-                <ol start="178" class="pre-context" id="pre139829909108856">
+                <ol start="178" class="pre-context" id="pre140665879322776">
                 
-                  <li onclick="toggle('pre139829909108856', 'post139829909108856')"><pre>            response = middleware_method(request, callback, callback_args, callback_kwargs)</pre></li>
+                  <li onclick="toggle('pre140665879322776', 'post140665879322776')"><pre>            response = middleware_method(request, callback, callback_args, callback_kwargs)</pre></li>
                 
-                  <li onclick="toggle('pre139829909108856', 'post139829909108856')"><pre>            if response:</pre></li>
+                  <li onclick="toggle('pre140665879322776', 'post140665879322776')"><pre>            if response:</pre></li>
                 
-                  <li onclick="toggle('pre139829909108856', 'post139829909108856')"><pre>                break</pre></li>
+                  <li onclick="toggle('pre140665879322776', 'post140665879322776')"><pre>                break</pre></li>
                 
-                  <li onclick="toggle('pre139829909108856', 'post139829909108856')"><pre></pre></li>
+                  <li onclick="toggle('pre140665879322776', 'post140665879322776')"><pre></pre></li>
                 
-                  <li onclick="toggle('pre139829909108856', 'post139829909108856')"><pre>        if response is None:</pre></li>
+                  <li onclick="toggle('pre140665879322776', 'post140665879322776')"><pre>        if response is None:</pre></li>
                 
-                  <li onclick="toggle('pre139829909108856', 'post139829909108856')"><pre>            wrapped_callback = self.make_view_atomic(callback)</pre></li>
+                  <li onclick="toggle('pre140665879322776', 'post140665879322776')"><pre>            wrapped_callback = self.make_view_atomic(callback)</pre></li>
                 
-                  <li onclick="toggle('pre139829909108856', 'post139829909108856')"><pre>            try:</pre></li>
+                  <li onclick="toggle('pre140665879322776', 'post140665879322776')"><pre>            try:</pre></li>
                 
                 </ol>
               
               <ol start="185" class="context-line">
-                <li onclick="toggle('pre139829909108856', 'post139829909108856')"><pre>
+                <li onclick="toggle('pre140665879322776', 'post140665879322776')"><pre>
                 response = wrapped_callback(request, *callback_args, **callback_kwargs)</pre> <span>...</span></li></ol>
               
-                <ol start='186' class="post-context" id="post139829909108856">
+                <ol start='186' class="post-context" id="post140665879322776">
                   
-                  <li onclick="toggle('pre139829909108856', 'post139829909108856')"><pre>            except Exception as e:</pre></li>
+                  <li onclick="toggle('pre140665879322776', 'post140665879322776')"><pre>            except Exception as e:</pre></li>
                   
-                  <li onclick="toggle('pre139829909108856', 'post139829909108856')"><pre>                response = self.process_exception_by_middleware(e, request)</pre></li>
+                  <li onclick="toggle('pre140665879322776', 'post140665879322776')"><pre>                response = self.process_exception_by_middleware(e, request)</pre></li>
                   
-                  <li onclick="toggle('pre139829909108856', 'post139829909108856')"><pre></pre></li>
+                  <li onclick="toggle('pre140665879322776', 'post140665879322776')"><pre></pre></li>
                   
-                  <li onclick="toggle('pre139829909108856', 'post139829909108856')"><pre>        # Complain if the view returned None (a common error).</pre></li>
+                  <li onclick="toggle('pre140665879322776', 'post140665879322776')"><pre>        # Complain if the view returned None (a common error).</pre></li>
                   
-                  <li onclick="toggle('pre139829909108856', 'post139829909108856')"><pre>        if response is None:</pre></li>
+                  <li onclick="toggle('pre140665879322776', 'post140665879322776')"><pre>        if response is None:</pre></li>
                   
-                  <li onclick="toggle('pre139829909108856', 'post139829909108856')"><pre>            if isinstance(callback, types.FunctionType):    # FBV</pre></li>
+                  <li onclick="toggle('pre140665879322776', 'post140665879322776')"><pre>            if isinstance(callback, types.FunctionType):    # FBV</pre></li>
                   
               </ol>
               
@@ -457,10 +457,10 @@
           
             <div class="commands">
                 
-                    <a href="#" onclick="return varToggle(this, '139829909108856')"><span>&#x25b6;</span> Local vars</a>
+                    <a href="#" onclick="return varToggle(this, '140665879322776')"><span>&#x25b6;</span> Local vars</a>
                 
             </div>
-            <table class="vars" id="v139829909108856">
+            <table class="vars" id="v140665879322776">
               <thead>
                 <tr>
                   <th>Variable</th>
@@ -471,7 +471,7 @@
                 
                   <tr>
                     <td>callback</td>
-                    <td class="code"><pre>&lt;function service_data_report at 0x7f2cb032d320&gt;</pre></td>
+                    <td class="code"><pre>&lt;function service_data_report at 0x7fef58141410&gt;</pre></td>
                   </tr>
                 
                   <tr>
@@ -486,12 +486,12 @@
                 
                   <tr>
                     <td>e</td>
-                    <td class="code"><pre>NameError(&quot;global name &#39;alert_dic&#39; is not defined&quot;,)</pre></td>
+                    <td class="code"><pre>KeyError(u&#39;lo&#39;,)</pre></td>
                   </tr>
                 
                   <tr>
                     <td>middleware_method</td>
-                    <td class="code"><pre>&lt;bound method CsrfViewMiddleware.process_view of &lt;django.middleware.csrf.CsrfViewMiddleware object at 0x7f2cb300bd90&gt;&gt;</pre></td>
+                    <td class="code"><pre>&lt;bound method CsrfViewMiddleware.process_view of &lt;django.middleware.csrf.CsrfViewMiddleware object at 0x7fef5aba3110&gt;&gt;</pre></td>
                   </tr>
                 
                   <tr>
@@ -516,12 +516,12 @@
                 
                   <tr>
                     <td>self</td>
-                    <td class="code"><pre>&lt;django.core.handlers.wsgi.WSGIHandler object at 0x7f2cb2f9e090&gt;</pre></td>
+                    <td class="code"><pre>&lt;django.core.handlers.wsgi.WSGIHandler object at 0x7fef5ab91ed0&gt;</pre></td>
                   </tr>
                 
                   <tr>
                     <td>wrapped_callback</td>
-                    <td class="code"><pre>&lt;function service_data_report at 0x7f2cb032d320&gt;</pre></td>
+                    <td class="code"><pre>&lt;function service_data_report at 0x7fef58141410&gt;</pre></td>
                   </tr>
                 
               </tbody>
@@ -534,35 +534,35 @@
           <code>/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py</code> in <code>wrapped_view</code>
 
           
-            <div class="context" id="c139829909492008">
+            <div class="context" id="c140665879325152">
               
-                <ol start="51" class="pre-context" id="pre139829909492008">
+                <ol start="51" class="pre-context" id="pre140665879325152">
                 
-                  <li onclick="toggle('pre139829909492008', 'post139829909492008')"><pre>    &quot;&quot;&quot;</pre></li>
+                  <li onclick="toggle('pre140665879325152', 'post140665879325152')"><pre>    &quot;&quot;&quot;</pre></li>
                 
-                  <li onclick="toggle('pre139829909492008', 'post139829909492008')"><pre>    Marks a view function as being exempt from the CSRF view protection.</pre></li>
+                  <li onclick="toggle('pre140665879325152', 'post140665879325152')"><pre>    Marks a view function as being exempt from the CSRF view protection.</pre></li>
                 
-                  <li onclick="toggle('pre139829909492008', 'post139829909492008')"><pre>    &quot;&quot;&quot;</pre></li>
+                  <li onclick="toggle('pre140665879325152', 'post140665879325152')"><pre>    &quot;&quot;&quot;</pre></li>
                 
-                  <li onclick="toggle('pre139829909492008', 'post139829909492008')"><pre>    # We could just do view_func.csrf_exempt = True, but decorators</pre></li>
+                  <li onclick="toggle('pre140665879325152', 'post140665879325152')"><pre>    # We could just do view_func.csrf_exempt = True, but decorators</pre></li>
                 
-                  <li onclick="toggle('pre139829909492008', 'post139829909492008')"><pre>    # are nicer if they don&#39;t have side-effects, so we return a new</pre></li>
+                  <li onclick="toggle('pre140665879325152', 'post140665879325152')"><pre>    # are nicer if they don&#39;t have side-effects, so we return a new</pre></li>
                 
-                  <li onclick="toggle('pre139829909492008', 'post139829909492008')"><pre>    # function.</pre></li>
+                  <li onclick="toggle('pre140665879325152', 'post140665879325152')"><pre>    # function.</pre></li>
                 
-                  <li onclick="toggle('pre139829909492008', 'post139829909492008')"><pre>    def wrapped_view(*args, **kwargs):</pre></li>
+                  <li onclick="toggle('pre140665879325152', 'post140665879325152')"><pre>    def wrapped_view(*args, **kwargs):</pre></li>
                 
                 </ol>
               
               <ol start="58" class="context-line">
-                <li onclick="toggle('pre139829909492008', 'post139829909492008')"><pre>
+                <li onclick="toggle('pre140665879325152', 'post140665879325152')"><pre>
         return view_func(*args, **kwargs)</pre> <span>...</span></li></ol>
               
-                <ol start='59' class="post-context" id="post139829909492008">
+                <ol start='59' class="post-context" id="post140665879325152">
                   
-                  <li onclick="toggle('pre139829909492008', 'post139829909492008')"><pre>    wrapped_view.csrf_exempt = True</pre></li>
+                  <li onclick="toggle('pre140665879325152', 'post140665879325152')"><pre>    wrapped_view.csrf_exempt = True</pre></li>
                   
-                  <li onclick="toggle('pre139829909492008', 'post139829909492008')"><pre>    return wraps(view_func, assigned=available_attrs(view_func))(wrapped_view)</pre></li>
+                  <li onclick="toggle('pre140665879325152', 'post140665879325152')"><pre>    return wraps(view_func, assigned=available_attrs(view_func))(wrapped_view)</pre></li>
                   
               </ol>
               
@@ -572,10 +572,10 @@
           
             <div class="commands">
                 
-                    <a href="#" onclick="return varToggle(this, '139829909492008')"><span>&#x25b6;</span> Local vars</a>
+                    <a href="#" onclick="return varToggle(this, '140665879325152')"><span>&#x25b6;</span> Local vars</a>
                 
             </div>
-            <table class="vars" id="v139829909492008">
+            <table class="vars" id="v140665879325152">
               <thead>
                 <tr>
                   <th>Variable</th>
@@ -596,7 +596,7 @@
                 
                   <tr>
                     <td>view_func</td>
-                    <td class="code"><pre>&lt;function service_data_report at 0x7f2cb032d2a8&gt;</pre></td>
+                    <td class="code"><pre>&lt;function service_data_report at 0x7fef5e027668&gt;</pre></td>
                   </tr>
                 
               </tbody>
@@ -609,43 +609,43 @@
           <code>/opt/monitor/background/views.py</code> in <code>service_data_report</code>
 
           
-            <div class="context" id="c139829909419936">
+            <div class="context" id="c140665879234896">
               
-                <ol start="35" class="pre-context" id="pre139829909419936">
+                <ol start="32" class="pre-context" id="pre140665879234896">
                 
-                  <li onclick="toggle('pre139829909419936', 'post139829909419936')"><pre>        # print client_id,service_name,data</pre></li>
+                  <li onclick="toggle('pre140665879234896', 'post140665879234896')"><pre>        data = json.loads(data)</pre></li>
                 
-                  <li onclick="toggle('pre139829909419936', 'post139829909419936')"><pre>        service = models.Service.objects.get(name=service_name)</pre></li>
+                  <li onclick="toggle('pre140665879234896', 'post140665879234896')"><pre>        if data[&#39;status&#39;]!=0:</pre></li>
                 
-                  <li onclick="toggle('pre139829909419936', 'post139829909419936')"><pre></pre></li>
+                  <li onclick="toggle('pre140665879234896', 'post140665879234896')"><pre>            return HttpResponse(&quot;data error&quot;)</pre></li>
                 
-                  <li onclick="toggle('pre139829909419936', 'post139829909419936')"><pre>        data_handler = DataHandler(client_id,service,data,REDIS_OBJ)</pre></li>
+                  <li onclick="toggle('pre140665879234896', 'post140665879234896')"><pre>        # print client_id,service_name,data</pre></li>
                 
-                  <li onclick="toggle('pre139829909419936', 'post139829909419936')"><pre>        data_handler.process()</pre></li>
+                  <li onclick="toggle('pre140665879234896', 'post140665879234896')"><pre>        service = models.Service.objects.get(name=service_name)</pre></li>
                 
-                  <li onclick="toggle('pre139829909419936', 'post139829909419936')"><pre></pre></li>
+                  <li onclick="toggle('pre140665879234896', 'post140665879234896')"><pre></pre></li>
                 
-                  <li onclick="toggle('pre139829909419936', 'post139829909419936')"><pre>        alert_handler = AlertHandler(client_id,REDIS_OBJ,MQ_CONN)</pre></li>
+                  <li onclick="toggle('pre140665879234896', 'post140665879234896')"><pre>        data_handler = DataHandler(client_id,service,data,REDIS_OBJ)</pre></li>
                 
                 </ol>
               
-              <ol start="42" class="context-line">
-                <li onclick="toggle('pre139829909419936', 'post139829909419936')"><pre>
-        alert_handler.process()</pre> <span>...</span></li></ol>
+              <ol start="39" class="context-line">
+                <li onclick="toggle('pre140665879234896', 'post140665879234896')"><pre>
+        data_handler.process()</pre> <span>...</span></li></ol>
               
-                <ol start='43' class="post-context" id="post139829909419936">
+                <ol start='40' class="post-context" id="post140665879234896">
                   
-                  <li onclick="toggle('pre139829909419936', 'post139829909419936')"><pre></pre></li>
+                  <li onclick="toggle('pre140665879234896', 'post140665879234896')"><pre></pre></li>
                   
-                  <li onclick="toggle('pre139829909419936', 'post139829909419936')"><pre></pre></li>
+                  <li onclick="toggle('pre140665879234896', 'post140665879234896')"><pre>        alert_handler = AlertHandler(client_id,REDIS_OBJ,MQ_CONN)</pre></li>
                   
-                  <li onclick="toggle('pre139829909419936', 'post139829909419936')"><pre>    return HttpResponse(&quot;service_data_report&quot;)</pre></li>
+                  <li onclick="toggle('pre140665879234896', 'post140665879234896')"><pre>        alert_handler.process()</pre></li>
                   
-                  <li onclick="toggle('pre139829909419936', 'post139829909419936')"><pre></pre></li>
+                  <li onclick="toggle('pre140665879234896', 'post140665879234896')"><pre></pre></li>
                   
-                  <li onclick="toggle('pre139829909419936', 'post139829909419936')"><pre>def hosts_status(request):</pre></li>
+                  <li onclick="toggle('pre140665879234896', 'post140665879234896')"><pre></pre></li>
                   
-                  <li onclick="toggle('pre139829909419936', 'post139829909419936')"><pre>    return HttpResponse(&quot;hosts_status&quot;)</pre></li>
+                  <li onclick="toggle('pre140665879234896', 'post140665879234896')"><pre>    return HttpResponse(&quot;service_data_report&quot;)</pre></li>
                   
               </ol>
               
@@ -655,10 +655,10 @@
           
             <div class="commands">
                 
-                    <a href="#" onclick="return varToggle(this, '139829909419936')"><span>&#x25b6;</span> Local vars</a>
+                    <a href="#" onclick="return varToggle(this, '140665879234896')"><span>&#x25b6;</span> Local vars</a>
                 
             </div>
-            <table class="vars" id="v139829909419936">
+            <table class="vars" id="v140665879234896">
               <thead>
                 <tr>
                   <th>Variable</th>
@@ -668,33 +668,21 @@
               <tbody>
                 
                   <tr>
-                    <td>alert_handler</td>
-                    <td class="code"><pre>&lt;background.alert_handler.AlertHandler object at 0x7f2cb016bb90&gt;</pre></td>
-                  </tr>
-                
-                  <tr>
                     <td>client_id</td>
                     <td class="code"><pre>u&#39;1&#39;</pre></td>
                   </tr>
                 
                   <tr>
                     <td>data</td>
-                    <td class="code"><pre>{u&#39;Buffers&#39;: u&#39;101424&#39;,
- u&#39;Cached&#39;: u&#39;96472&#39;,
- u&#39;MemFree&#39;: u&#39;3430212&#39;,
- u&#39;MemTotal&#39;: u&#39;4046716&#39;,
- u&#39;MemUsage&#39;: 418608,
- u&#39;MemUsage_p&#39;: u&#39;10&#39;,
- u&#39;SwapFree&#39;: u&#39;4094208&#39;,
- u&#39;SwapTotal&#39;: u&#39;4191228&#39;,
- u&#39;SwapUsage&#39;: 97020,
- u&#39;SwapUsage_p&#39;: u&#39;3&#39;,
+                    <td class="code"><pre>{u&#39;data&#39;: {u&#39;docker0&#39;: {u&#39;t_in&#39;: u&#39;0.00&#39;, u&#39;t_out&#39;: u&#39;0.00&#39;},
+           u&#39;eth0&#39;: {u&#39;t_in&#39;: u&#39;0.09&#39;, u&#39;t_out&#39;: u&#39;0.30&#39;},
+           u&#39;lo&#39;: {u&#39;t_in&#39;: u&#39;5.45&#39;, u&#39;t_out&#39;: u&#39;5.45&#39;}},
  u&#39;status&#39;: 0}</pre></td>
                   </tr>
                 
                   <tr>
                     <td>data_handler</td>
-                    <td class="code"><pre>&lt;background.data_handler.DataHandler object at 0x7f2cb016b8d0&gt;</pre></td>
+                    <td class="code"><pre>&lt;background.data_handler.DataHandler object at 0x7fef5a203450&gt;</pre></td>
                   </tr>
                 
                   <tr>
@@ -704,12 +692,12 @@
                 
                   <tr>
                     <td>service</td>
-                    <td class="code"><pre>&lt;Service: LinuxMemory&gt;</pre></td>
+                    <td class="code"><pre>&lt;Service: LinuxNetwork&gt;</pre></td>
                   </tr>
                 
                   <tr>
                     <td>service_name</td>
-                    <td class="code"><pre>u&#39;LinuxMemory&#39;</pre></td>
+                    <td class="code"><pre>u&#39;LinuxNetwork&#39;</pre></td>
                   </tr>
                 
               </tbody>
@@ -719,40 +707,42 @@
       
         
         <li class="frame user">
-          <code>/opt/monitor/background/alert_handler.py</code> in <code>process</code>
+          <code>/opt/monitor/background/data_handler.py</code> in <code>process</code>
 
           
-            <div class="context" id="c139829909698176">
+            <div class="context" id="c140665879235328">
               
-                <ol start="137" class="pre-context" id="pre139829909698176">
+                <ol start="123" class="pre-context" id="pre140665879235328">
                 
-                  <li onclick="toggle('pre139829909698176', 'post139829909698176')"><pre>                    alert_data_in_redis = self.redis_obj.get(redis_alert_key)</pre></li>
+                  <li onclick="toggle('pre140665879235328', 'post140665879235328')"><pre>            if interval == 0:</pre></li>
                 
-                  <li onclick="toggle('pre139829909698176', 'post139829909698176')"><pre>                    alert_data_in_redis = json.loads(alert_data_in_redis)</pre></li>
+                  <li onclick="toggle('pre140665879235328', 'post140665879235328')"><pre>                self.redis_obj.rpush(current_redis_key,json.dumps([self.data,time.time()] ))</pre></li>
                 
-                  <li onclick="toggle('pre139829909698176', 'post139829909698176')"><pre>                    alert_data_in_redis[&#39;status&#39;] = False</pre></li>
+                  <li onclick="toggle('pre140665879235328', 'post140665879235328')"><pre>            else:</pre></li>
                 
-                  <li onclick="toggle('pre139829909698176', 'post139829909698176')"><pre>                    self.redis_obj.set(redis_alert_key,json.dumps(alert_data_in_redis))</pre></li>
+                  <li onclick="toggle('pre140665879235328', 'post140665879235328')"><pre>                if time.time() - last_update_time &gt; interval:</pre></li>
                 
-                  <li onclick="toggle('pre139829909698176', 'post139829909698176')"><pre>                    self.mq_channel.queue_declare(queue=&#39;trigger_notify&#39;)</pre></li>
+                  <li onclick="toggle('pre140665879235328', 'post140665879235328')"><pre>                    lastest_data_key_in_redis = &quot;StatusData_%s_%s_latest&quot; %(self.client_id,self.service_name)</pre></li>
                 
-                  <li onclick="toggle('pre139829909698176', 'post139829909698176')"><pre>                    self.mq_channel.basic_publish(exchange=&#39;&#39;, routing_key=&#39;trigger_notify&#39;, body=json.dumps(alert_data_in_redis))                    # self.redis_obj.delete(redis_alert_key)</pre></li>
+                  <li onclick="toggle('pre140665879235328', 'post140665879235328')"><pre>                    redis_slice = self.get_redis_slice(lastest_data_key_in_redis,interval,self.service_check_interval)</pre></li>
                 
-                  <li onclick="toggle('pre139829909698176', 'post139829909698176')"><pre></pre></li>
+                  <li onclick="toggle('pre140665879235328', 'post140665879235328')"><pre>                    if len(redis_slice)&gt; 0:</pre></li>
                 
                 </ol>
               
-              <ol start="144" class="context-line">
-                <li onclick="toggle('pre139829909698176', 'post139829909698176')"><pre>
-            alert_dic[&#39;client_id&#39;] = self.client_id</pre> <span>...</span></li></ol>
+              <ol start="130" class="context-line">
+                <li onclick="toggle('pre140665879235328', 'post140665879235328')"><pre>
+                        self.optimized_data(current_redis_key, redis_slice)</pre> <span>...</span></li></ol>
               
-                <ol start='145' class="post-context" id="post139829909698176">
+                <ol start='131' class="post-context" id="post140665879235328">
                   
-                  <li onclick="toggle('pre139829909698176', 'post139829909698176')"><pre>            </pre></li>
+                  <li onclick="toggle('pre140665879235328', 'post140665879235328')"><pre>            while self.redis_obj.llen(current_redis_key) &gt; count:</pre></li>
                   
-                  <li onclick="toggle('pre139829909698176', 'post139829909698176')"><pre>            self.mq_channel.queue_declare(queue=&#39;host_alive_notify&#39;)</pre></li>
+                  <li onclick="toggle('pre140665879235328', 'post140665879235328')"><pre>                self.redis_obj.lpop(current_redis_key)</pre></li>
                   
-                  <li onclick="toggle('pre139829909698176', 'post139829909698176')"><pre>            self.mq_channel.basic_publish(exchange=&#39;&#39;, routing_key=&#39;host_alive_notify&#39;, body=json.dumps(alert_dic))</pre></li>
+                  <li onclick="toggle('pre140665879235328', 'post140665879235328')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140665879235328', 'post140665879235328')"><pre></pre></li>
                   
               </ol>
               
@@ -762,10 +752,10 @@
           
             <div class="commands">
                 
-                    <a href="#" onclick="return varToggle(this, '139829909698176')"><span>&#x25b6;</span> Local vars</a>
+                    <a href="#" onclick="return varToggle(this, '140665879235328')"><span>&#x25b6;</span> Local vars</a>
                 
             </div>
-            <table class="vars" id="v139829909698176">
+            <table class="vars" id="v140665879235328">
               <thead>
                 <tr>
                   <th>Variable</th>
@@ -775,63 +765,211 @@
               <tbody>
                 
                   <tr>
-                    <td>alert_data_in_redis</td>
-                    <td class="code"><pre>None</pre></td>
+                    <td>count</td>
+                    <td class="code"><pre>600</pre></td>
                   </tr>
                 
                   <tr>
-                    <td>expression</td>
-                    <td class="code"><pre>&lt;TriggerExpression: LinuxMemory.MemUsage_p.MemUsage_p gt(avg(1))&gt;</pre></td>
+                    <td>current_redis_key</td>
+                    <td class="code"><pre>u&#39;StatusData_1_LinuxNetwork_10mins&#39;</pre></td>
                   </tr>
                 
                   <tr>
-                    <td>expression_ret</td>
-                    <td class="code"><pre>[False, 10.0, None]</pre></td>
+                    <td>interval</td>
+                    <td class="code"><pre>600</pre></td>
                   </tr>
                 
                   <tr>
-                    <td>expression_ret_str</td>
-                    <td class="code"><pre>u&#39;False or False or False&#39;</pre></td>
+                    <td>last_point_from_redis</td>
+                    <td class="code"><pre>[{u&#39;data&#39;: {u&#39;docker0&#39;: {u&#39;t_in&#39;: [0.0, 0.0, 0.0, 0.0],
+                         u&#39;t_out&#39;: [0.0, 0.0, 0.0, 0.0]},
+            u&#39;eth0&#39;: {u&#39;t_in&#39;: [0.19, 0.19, 0.19, 0.19],
+                      u&#39;t_out&#39;: [0.42, 0.42, 0.42, 0.42]},
+            u&#39;lo&#39;: {u&#39;t_in&#39;: [53.79, 53.79, 53.79, 53.79],
+                    u&#39;t_out&#39;: [53.79, 53.79, 53.79, 53.79]}}},
+ 1472193858.091082]</pre></td>
                   </tr>
                 
                   <tr>
-                    <td>notify_flag</td>
-                    <td class="code"><pre>False</pre></td>
+                    <td>last_update_time</td>
+                    <td class="code"><pre>1472193858.091082</pre></td>
                   </tr>
                 
                   <tr>
-                    <td>positive_expressions</td>
-                    <td class="code"><pre>[]</pre></td>
+                    <td>lastest_data_key_in_redis</td>
+                    <td class="code"><pre>u&#39;StatusData_1_LinuxNetwork_latest&#39;</pre></td>
                   </tr>
                 
                   <tr>
-                    <td>recover_data</td>
-                    <td class="code"><pre>&#39;&#39;</pre></td>
-                  </tr>
-                
-                  <tr>
-                    <td>redis_alert_key</td>
-                    <td class="code"><pre>u&#39;host_1_trigger_1&#39;</pre></td>
-                  </tr>
-                
-                  <tr>
-                    <td>redis_key_flag</td>
-                    <td class="code"><pre>False</pre></td>
+                    <td>redis_slice</td>
+                    <td class="code"><pre>[&#39;[{&quot;status&quot;: 0, &quot;data&quot;: {}}, 1472194035.515125]&#39;,
+ &#39;[{&quot;status&quot;: 0, &quot;data&quot;: {&quot;lo&quot;: {&quot;t_in&quot;: &quot;5.50&quot;, &quot;t_out&quot;: &quot;5.50&quot;}, &quot;docker0&quot;: {&quot;t_in&quot;: &quot;0.00&quot;, &quot;t_out&quot;: &quot;0.00&quot;}, &quot;eth0&quot;: {&quot;t_in&quot;: &quot;0.16&quot;, &quot;t_out&quot;: &quot;0.30&quot;}}}, 1472194028.826034]&#39;]</pre></td>
                   </tr>
                 
                   <tr>
                     <td>self</td>
-                    <td class="code"><pre>&lt;background.alert_handler.AlertHandler object at 0x7f2cb016bb90&gt;</pre></td>
+                    <td class="code"><pre>&lt;background.data_handler.DataHandler object at 0x7fef5a203450&gt;</pre></td>
                   </tr>
                 
                   <tr>
-                    <td>t</td>
-                    <td class="code"><pre>&lt;Trigger: &lt;serice:trigger01, severity:Warning&gt;&gt;</pre></td>
+                    <td>time_range</td>
+                    <td class="code"><pre>&#39;10mins&#39;</pre></td>
                   </tr>
                 
                   <tr>
-                    <td>triggers</td>
-                    <td class="code"><pre>set([&lt;Trigger: &lt;serice:trigger01, severity:Warning&gt;&gt;])</pre></td>
+                    <td>time_range_list</td>
+                    <td class="code"><pre>[600, 600]</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          <code>/opt/monitor/background/data_handler.py</code> in <code>optimized_data</code>
+
+          
+            <div class="context" id="c140665879076944">
+              
+                <ol start="47" class="pre-context" id="pre140665879076944">
+                
+                  <li onclick="toggle('pre140665879076944', 'post140665879076944')"><pre>            ret_dic = copy.deepcopy(temp_dic)</pre></li>
+                
+                  <li onclick="toggle('pre140665879076944', 'post140665879076944')"><pre>            for p in redis_slice:</pre></li>
+                
+                  <li onclick="toggle('pre140665879076944', 'post140665879076944')"><pre>                p = json.loads(p)</pre></li>
+                
+                  <li onclick="toggle('pre140665879076944', 'post140665879076944')"><pre>                data , update_time = p</pre></li>
+                
+                  <li onclick="toggle('pre140665879076944', 'post140665879076944')"><pre>                for k,sub_dic in data[&#39;data&#39;].items():</pre></li>
+                
+                  <li onclick="toggle('pre140665879076944', 'post140665879076944')"><pre>                    # k like lo or eth0</pre></li>
+                
+                  <li onclick="toggle('pre140665879076944', 'post140665879076944')"><pre>                    for sub_key,sub_val in sub_dic.items():</pre></li>
+                
+                </ol>
+              
+              <ol start="54" class="context-line">
+                <li onclick="toggle('pre140665879076944', 'post140665879076944')"><pre>
+                        temp_dic[k][sub_key].append(round(float(sub_val),2))</pre> <span>...</span></li></ol>
+              
+                <ol start='55' class="post-context" id="post140665879076944">
+                  
+                  <li onclick="toggle('pre140665879076944', 'post140665879076944')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140665879076944', 'post140665879076944')"><pre>            for k,sub_dic in temp_dic.items():</pre></li>
+                  
+                  <li onclick="toggle('pre140665879076944', 'post140665879076944')"><pre>                for sub_key,sub_val in sub_dic.items():</pre></li>
+                  
+                  <li onclick="toggle('pre140665879076944', 'post140665879076944')"><pre>                    avg_ret = self.get_avg(sub_val)</pre></li>
+                  
+                  <li onclick="toggle('pre140665879076944', 'post140665879076944')"><pre>                    max_ret = self.get_max(sub_val)</pre></li>
+                  
+                  <li onclick="toggle('pre140665879076944', 'post140665879076944')"><pre>                    min_ret = self.get_min(sub_val)</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '140665879076944')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v140665879076944">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>current_redis_key</td>
+                    <td class="code"><pre>u&#39;StatusData_1_LinuxNetwork_10mins&#39;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>data</td>
+                    <td class="code"><pre>{u&#39;data&#39;: {u&#39;docker0&#39;: {u&#39;t_in&#39;: u&#39;0.00&#39;, u&#39;t_out&#39;: u&#39;0.00&#39;},
+           u&#39;eth0&#39;: {u&#39;t_in&#39;: u&#39;0.16&#39;, u&#39;t_out&#39;: u&#39;0.30&#39;},
+           u&#39;lo&#39;: {u&#39;t_in&#39;: u&#39;5.50&#39;, u&#39;t_out&#39;: u&#39;5.50&#39;}},
+ u&#39;status&#39;: 0}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>k</td>
+                    <td class="code"><pre>u&#39;lo&#39;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>one_data_point</td>
+                    <td class="code"><pre>[{u&#39;data&#39;: {}, u&#39;status&#39;: 0}, 1472194035.515125]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>p</td>
+                    <td class="code"><pre>[{u&#39;data&#39;: {u&#39;docker0&#39;: {u&#39;t_in&#39;: u&#39;0.00&#39;, u&#39;t_out&#39;: u&#39;0.00&#39;},
+            u&#39;eth0&#39;: {u&#39;t_in&#39;: u&#39;0.16&#39;, u&#39;t_out&#39;: u&#39;0.30&#39;},
+            u&#39;lo&#39;: {u&#39;t_in&#39;: u&#39;5.50&#39;, u&#39;t_out&#39;: u&#39;5.50&#39;}},
+  u&#39;status&#39;: 0},
+ 1472194028.826034]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>redis_slice</td>
+                    <td class="code"><pre>[&#39;[{&quot;status&quot;: 0, &quot;data&quot;: {}}, 1472194035.515125]&#39;,
+ &#39;[{&quot;status&quot;: 0, &quot;data&quot;: {&quot;lo&quot;: {&quot;t_in&quot;: &quot;5.50&quot;, &quot;t_out&quot;: &quot;5.50&quot;}, &quot;docker0&quot;: {&quot;t_in&quot;: &quot;0.00&quot;, &quot;t_out&quot;: &quot;0.00&quot;}, &quot;eth0&quot;: {&quot;t_in&quot;: &quot;0.16&quot;, &quot;t_out&quot;: &quot;0.30&quot;}}}, 1472194028.826034]&#39;]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>ret_dic</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;background.data_handler.DataHandler object at 0x7fef5a203450&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>sub_data</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>sub_dic</td>
+                    <td class="code"><pre>{u&#39;t_in&#39;: u&#39;5.50&#39;, u&#39;t_out&#39;: u&#39;5.50&#39;}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>sub_key</td>
+                    <td class="code"><pre>u&#39;t_in&#39;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>sub_val</td>
+                    <td class="code"><pre>u&#39;5.50&#39;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>temp_dic</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>timestamp</td>
+                    <td class="code"><pre>1472194035.515125</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>update_time</td>
+                    <td class="code"><pre>1472194028.826034</pre></td>
                   </tr>
                 
               </tbody>
@@ -847,7 +985,7 @@
   <div id="pastebinTraceback" class="pastebin">
     <input type="hidden" name="language" value="PythonConsole">
     <input type="hidden" name="title"
-      value="NameError at /api/client/service/report/">
+      value="KeyError at /api/client/service/report/">
     <input type="hidden" name="source" value="Django Dpaste Agent">
     <input type="hidden" name="poster" value="Django">
     <textarea name="content" id="traceback_area" cols="140" rows="25">
@@ -893,13 +1031,16 @@ File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py" in
   58.         return view_func(*args, **kwargs)
 
 File "/opt/monitor/background/views.py" in service_data_report
-  42.         alert_handler.process()
+  39.         data_handler.process()
 
-File "/opt/monitor/background/alert_handler.py" in process
-  144.             alert_dic[&#39;client_id&#39;] = self.client_id
+File "/opt/monitor/background/data_handler.py" in process
+  130.                         self.optimized_data(current_redis_key, redis_slice)
 
-Exception Type: NameError at /api/client/service/report/
-Exception Value: global name &#39;alert_dic&#39; is not defined
+File "/opt/monitor/background/data_handler.py" in optimized_data
+  54.                         temp_dic[k][sub_key].append(round(float(sub_val),2))
+
+Exception Type: KeyError at /api/client/service/report/
+Exception Value: u&#39;lo&#39;
 </textarea>
   <br><br>
   <input type="submit" value="Share this traceback on a public website">
@@ -936,12 +1077,12 @@ Exception Value: global name &#39;alert_dic&#39; is not defined
         
           <tr>
             <td>service_name</td>
-            <td class="code"><pre>u&#39;LinuxMemory&#39;</pre></td>
+            <td class="code"><pre>u&#39;LinuxNetwork&#39;</pre></td>
           </tr>
         
           <tr>
             <td>data</td>
-            <td class="code"><pre>u&#39;{&quot;status&quot;: 0, &quot;MemTotal&quot;: &quot;4046716&quot;, &quot;MemUsage&quot;: 418608, &quot;Cached&quot;: &quot;96472&quot;, &quot;MemUsage_p&quot;: &quot;10&quot;, &quot;SwapFree&quot;: &quot;4094208&quot;, &quot;SwapUsage&quot;: 97020, &quot;SwapTotal&quot;: &quot;4191228&quot;, &quot;MemFree&quot;: &quot;3430212&quot;, &quot;SwapUsage_p&quot;: &quot;3&quot;, &quot;Buffers&quot;: &quot;101424&quot;}&#39;</pre></td>
+            <td class="code"><pre>u&#39;{&quot;status&quot;: 0, &quot;data&quot;: {&quot;lo&quot;: {&quot;t_in&quot;: &quot;5.45&quot;, &quot;t_out&quot;: &quot;5.45&quot;}, &quot;docker0&quot;: {&quot;t_in&quot;: &quot;0.00&quot;, &quot;t_out&quot;: &quot;0.00&quot;}, &quot;eth0&quot;: {&quot;t_in&quot;: &quot;0.09&quot;, &quot;t_out&quot;: &quot;0.30&quot;}}}&#39;</pre></td>
           </tr>
         
           <tr>
@@ -975,7 +1116,7 @@ Exception Value: global name &#39;alert_dic&#39; is not defined
       
         <tr>
           <td>CONTENT_LENGTH</td>
-          <td class="code"><pre>&#39;389&#39;</pre></td>
+          <td class="code"><pre>&#39;318&#39;</pre></td>
         </tr>
       
         <tr>
@@ -1135,17 +1276,17 @@ Exception Value: global name &#39;alert_dic&#39; is not defined
       
         <tr>
           <td>SSH_CLIENT</td>
-          <td class="code"><pre>&#39;192.168.29.124 49194 22&#39;</pre></td>
+          <td class="code"><pre>&#39;192.168.29.124 62353 22&#39;</pre></td>
         </tr>
       
         <tr>
           <td>SSH_CONNECTION</td>
-          <td class="code"><pre>&#39;192.168.29.124 49194 192.168.26.67 22&#39;</pre></td>
+          <td class="code"><pre>&#39;192.168.29.124 62353 192.168.26.67 22&#39;</pre></td>
         </tr>
       
         <tr>
           <td>SSH_TTY</td>
-          <td class="code"><pre>&#39;/dev/pts/1&#39;</pre></td>
+          <td class="code"><pre>&#39;/dev/pts/0&#39;</pre></td>
         </tr>
       
         <tr>
@@ -1175,7 +1316,7 @@ Exception Value: global name &#39;alert_dic&#39; is not defined
       
         <tr>
           <td>XDG_SESSION_ID</td>
-          <td class="code"><pre>&#39;106&#39;</pre></td>
+          <td class="code"><pre>&#39;8&#39;</pre></td>
         </tr>
       
         <tr>
@@ -1185,7 +1326,7 @@ Exception Value: global name &#39;alert_dic&#39; is not defined
       
         <tr>
           <td>wsgi.errors</td>
-          <td class="code"><pre>&lt;open file &#39;&lt;stderr&gt;&#39;, mode &#39;w&#39; at 0x7f2cb64891e0&gt;</pre></td>
+          <td class="code"><pre>&lt;open file &#39;&lt;stderr&gt;&#39;, mode &#39;w&#39; at 0x7fef5e08e1e0&gt;</pre></td>
         </tr>
       
         <tr>
@@ -1195,7 +1336,7 @@ Exception Value: global name &#39;alert_dic&#39; is not defined
       
         <tr>
           <td>wsgi.input</td>
-          <td class="code"><pre>&lt;socket._fileobject object at 0x7f2cb0130f50&gt;</pre></td>
+          <td class="code"><pre>&lt;socket._fileobject object at 0x7fef53da1550&gt;</pre></td>
         </tr>
       
         <tr>
@@ -1582,7 +1723,7 @@ Exception Value: global name &#39;alert_dic&#39; is not defined
       
         <tr>
           <td>HOST_TIMEOUT_SECOND</td>
-          <td class="code"><pre>120</pre></td>
+          <td class="code"><pre>20</pre></td>
         </tr>
       
         <tr>

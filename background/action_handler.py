@@ -28,6 +28,7 @@ class ActionHandler(object):
         self.sendmail = sendmail
         self.alert_dic = {}
         self.host_alive_dic = {}
+        self.host_alive_dic_update_interval = 20
 
     def listen_notify_mq_channel(self):
         connection = pika.BlockingConnection(pika.ConnectionParameters(
@@ -42,14 +43,11 @@ class ActionHandler(object):
 
 
     def check_host_alive_callback(self,ch, method, properties, body):
-        print body,'in check_host_alive_callback'
         data = json.loads(body)
-        client_id = data['client_id']
-        self.host_alive_dic['client_id'] = time.time()
-        for client_id,time_stamp in self.host_alive_dic.items():
-            if time.time() - time_stamp > self.django_settings.HOST_TIMEOUT_SECOND:
-                pass
-
+        client_id = int(data['client_id'])
+        self.host_alive_dic[client_id]['alive_time_stamp'] = time.time()
+        self.host_alive_dic[client_id]['alert_count'] = 0
+        self.host_alive_dic[client_id]['last_alert_time'] = 0
 
 
 
@@ -63,15 +61,82 @@ class ActionHandler(object):
         print ' [*] Waiting for host alive messages. To exit press CTRL+C'
         channel.start_consuming()
 
+    def update_host_alive_dic(self):
+        host_list = self.models.Host.objects.all()
+        for h in host_list:
+            if not self.host_alive_dic.has_key(h.id):
+                self.host_alive_dic[h.id] = {}
+                self.host_alive_dic[h.id]['alive_time_stamp'] = time.time()
+                self.host_alive_dic[h.id]['alert_count'] = 0
+                self.host_alive_dic[h.id]['last_alert_time'] = 0
+
+
+        for host_id,time_stamp in self.host_alive_dic.items():
+            flag = False
+            for h in host_list:
+                if h.id == host_id:
+                    flag = True
+                    break
+            if not flag:
+                del self.host_alive_dic[host_id]
+
+        print 'update_host_alive_dic',self.host_alive_dic
+
+    def loads_and_refreash_host_alive_dic(self):
+        lasted_update_time = 0
+        while True:
+            if time.time() - lasted_update_time> self.host_alive_dic_update_interval:
+                self.update_host_alive_dic()
+                lasted_update_time=time.time()
+            actions = []
+            for host_id,val_dic in self.host_alive_dic.items():
+                try:
+                    host_obj = self.models.Host.objects.get(id=host_id)
+                except self.models.Host.DoesNotExist:
+                    continue
+                if time.time() - val_dic['alive_time_stamp'] > host_obj.host_alive_check_interval:
+
+                    actions.extend(host_obj.action_set.select_related())
+                    host_group_list = host_obj.host_groups.select_related()
+                    for hg in host_group_list:
+                        actions.extend(hg.action_set.select_related())
+                    actions = set(actions)
+                    for action in actions:
+                        for action_operation in action.operations.select_related():
+                            if val_dic['alert_count'] == 0:
+                                if val_dic['alert_count'] >= action_operation.step:
+                                    subject  = 'host : %s time out !' % host_obj.name
+                                    mail_body = subject
+                                    action_operation_func = getattr(self,'execute_%s' % action_operation.action_type)
+                                    action_operation_func(action_operation,subject,mail_body)
+                                val_dic['alert_count'] += 1
+                                val_dic['last_alert_time'] = time.time()
+                            if time.time() - val_dic['last_alert_time'] > action.interval:
+                                val_dic['alert_count'] += 1
+                                val_dic['last_alert_time'] = time.time()
+                                if val_dic['alert_count'] >= action_operation.step:
+                                    subject  = 'host : %s time out !' % host_obj.name
+                                    mail_body = subject
+                                    action_operation_func = getattr(self,'execute_%s' % action_operation.action_type)
+                                    action_operation_func(action_operation,subject,mail_body)
+
+            print self.host_alive_dic
+            time.sleep(1)
+
+
     def process(self):
         # self.listen_notify_mq_channel()
-        listener_trigger_thread = threading.Thread(target=self.listen_notify_mq_channel,args=())
-        listener_trigger_thread.start()
+        try:
+            listener_trigger_thread = threading.Thread(target=self.listen_notify_mq_channel,args=())
+            listener_trigger_thread.start()
 
-        listener_host_alive_thread = threading.Thread(target=self.listen_host_alive_channel,args=())
-        listener_host_alive_thread.start()
+            loads_and_refreash_host_alive_dic_thread = threading.Thread(target=self.loads_and_refreash_host_alive_dic)
+            loads_and_refreash_host_alive_dic_thread.start()
 
-
+            listener_host_alive_thread = threading.Thread(target=self.listen_host_alive_channel,args=())
+            listener_host_alive_thread.start()
+        except KeyboardInterrupt:
+            sys.exit("normal exit......")
 
 
     def get_action_set(self,trigger_id,client_id):
@@ -104,6 +169,7 @@ class ActionHandler(object):
 
     def execute_script(self,msg):
         pass
+
     def iter_action(self,redis_alert_key,alert_dic):
         host = self.models.Host.objects.get(id=alert_dic['client_id'])
         trigger = self.models.Trigger.objects.get(id=alert_dic['trigger_id'])

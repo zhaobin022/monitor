@@ -4,8 +4,6 @@ import json
 import copy
 import time
 import operator
-from django.core.cache import cache
-from monitor.settings import HOST_TIMEOUT_SECOND
 
 class AlertHandler(object):
     def __init__(self,client_id,redis_obj,mq_conn):
@@ -134,7 +132,7 @@ class AlertHandler(object):
                 self.mq_channel.basic_publish(exchange='', routing_key='trigger_notify', body=json.dumps(notify_data))
             else:
                 if redis_key_flag:
-                    alert_data_in_redis = self.redis_obj.get(redis_alert_key)
+                    # alert_data_in_redis = self.redis_obj.get(redis_alert_key)
                     alert_data_in_redis = json.loads(alert_data_in_redis)
                     alert_data_in_redis['status'] = False
                     self.redis_obj.set(redis_alert_key,json.dumps(alert_data_in_redis))
