@@ -37,7 +37,7 @@ class ClientHandler(object):
             request_uri,
         )
         request_url = request_url+'/%d' % client_id
-
+        print request_url,'---------------------------'
         ret = self.url_request(request_url,request_type,'json')
         # data example: {u'services': {u'LinuxCpu': [u'get_linux_cpu', 60], u'LinuxMemory': [u'get_memory_info', 60], u'LinuxNetwork': [u'GetNetworkStatus', 10]}}
         service_name_ret_from_server = set(ret['services'].keys())

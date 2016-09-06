@@ -90,6 +90,7 @@ class AlertHandler(object):
 
 
     def process(self):
+        print 'in alert process '
         triggers = self.get_host_triggers()
 
         for t in triggers:
@@ -140,6 +141,6 @@ class AlertHandler(object):
                     self.mq_channel.basic_publish(exchange='', routing_key='trigger_notify', body=json.dumps(alert_data_in_redis))                    # self.redis_obj.delete(redis_alert_key)
             alert_dic = {}
             alert_dic['client_id'] = self.client_id
-
+            print 'alert_dic for host alive ..........................'
             self.mq_channel.queue_declare(queue='host_alive_notify')
             self.mq_channel.basic_publish(exchange='', routing_key='host_alive_notify', body=json.dumps(alert_dic))
