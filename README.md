@@ -1,9 +1,9 @@
 # monitor
 # my monitor
 
-![](./mdpic/1.png)
-![](./mdpic/2.png)
-![](./mdpic/3.png)
-![](./mdpic/4.png)
-![](./mdpic/5.png)
-![](./mdpic/6.png)
+![](/monitor/mdpic/1.png)
+![](/monitor/mdpic/2.png)
+![](/monitor/mdpic/3.png)
+![](/monitor/mdpic/4.png)
+![](/monitor/mdpic/5.png)
+![](/monitor/mdpic/6.png)
