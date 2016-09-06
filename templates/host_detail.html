@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="/static/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="/static/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="/static/css/animate.min.css" rel="stylesheet">
+    <link href="/static/css/style.min.css?v=4.1.0" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        {% for name,val_dic in service_name_dic.items %}
+            {% if val_dic.has_sub_service %}
+                {% for sub_service_name in val_dic.sub_services  %}
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>{{ name }}({{ sub_service_name }})</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="graph_flot.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="graph_flot.html#">选项1</a>
+                                </li>
+                                <li><a href="graph_flot.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="row">
+                        <button onclick="display_according_timerange(this)" service_name="{{ name }}" sub_service_name="{{ sub_service_name }}" type="button" time_range="realtime" class="btn btn-primary btn-xs" >实时</button>
+                        <button onclick="display_according_timerange(this)" service_name="{{ name }}" sub_service_name="{{ sub_service_name }}" type="button" time_range="latest" class="btn btn-primary btn-xs" >当前</button>
+                        <button onclick="display_according_timerange(this)" service_name="{{ name }}" sub_service_name="{{ sub_service_name }}" type="button" time_range="10mins" class="btn btn-primary btn-xs" >4天</button>
+                        <button onclick="display_according_timerange(this)" service_name="{{ name }}" sub_service_name="{{ sub_service_name }}" type="button" time_range="30mins" class="btn btn-primary btn-xs" >14天</button>
+                        <button onclick="display_according_timerange(this)" service_name="{{ name }}" sub_service_name="{{ sub_service_name }}" type="button" time_range="60mins" class="btn btn-primary btn-xs" >25天</button>
+                        </div>
+                        <div id="container_{{ name }}_{{ sub_service_name }}"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                {% endfor %}
+            {% else %}
+       <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>{{ name }}</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="graph_flot.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="graph_flot.html#">选项1</a>
+                                </li>
+                                <li><a href="graph_flot.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="row">
+                        <button onclick="display_according_timerange(this)" type="button" service_name="{{ name }}" time_range="realtime" class="btn btn-primary btn-xs" >实时</button>
+                        <button onclick="display_according_timerange(this)" type="button" service_name="{{ name }}" time_range="latest" class="btn btn-primary btn-xs" >当前</button>
+                        <button onclick="display_according_timerange(this)" type="button" service_name="{{ name }}" time_range="10mins" class="btn btn-primary btn-xs" >4天</button>
+                        <button onclick="display_according_timerange(this)" type="button" service_name="{{ name }}" time_range="30mins" class="btn btn-primary btn-xs" >14天</button>
+                        <button onclick="display_according_timerange(this)" type="button" service_name="{{ name }}" time_range="60mins" class="btn btn-primary btn-xs" >25天</button>
+                        </div>
+                        <div id="container_{{ name }}"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            {% endif %}
+        {% endfor %}
+    </div>
+    <script src="/static/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/static/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="/static/js/content.min.js?v=1.0.0"></script>
+    <script src="/static/js/highstock.js"></script>
+    <script src="/static/js/exporting.js"></script>
+<script>
+    var service_list = new Array();
+    client_id = {{ host_obj.id }};
+    {% for name,val_dic in service_name_dic.items %}
+    service_list.push('{{ name }}');
+    {% endfor %}
+
+    createChart = function (seriesOptions,container_id) {
+        Highcharts.setOptions({global: {useUTC: false}});
+        $('#'+container_id).highcharts('StockChart', {
+            rangeSelector: {
+                enabled: false
+            },
+            legend: {
+                enabled: true,
+                layout: 'horizontal'
+            },
+            tooltip: {
+                pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b> ({point.change}%)<br/>',
+                valueDecimals: 2
+            },
+            series: seriesOptions
+        });
+    };
+
+    createDynamicChart = function (seriesOptions,container_id,service_name,sub_key) {
+        Highcharts.setOptions({global: {useUTC: false}});
+        $('#'+container_id).highcharts('StockChart', {
+            chart: {
+                renderTo: 'container',
+                type: 'spline',
+                marginRight: 10,
+                events: {
+                    load: function () {
+                        var series = this.series;
+                        interval_fun = setInterval(function () {
+                            $.getJSON("{% url 'get_service_item' %}",{'client_id':client_id,'service_name':service_name},function(ret) {
+
+                                if (ret.has_sub_service == true) {
+                                    console.log(ret);
+                                    $.each( ret.service_item_list,function(n,key) {
+                                        $.getJSON("{% url 'get_realtime_data' %}",{'client_id':client_id,'service_name':service_name,'key':key,'sub_key':sub_key},function(sub_data) {
+                                            console.log(sub_data);
+                                            var x = sub_data[0];
+                                            var y = sub_data[1];
+                                            if (typeof (series[n]) != "undefined") {
+                                                series[n].addPoint([x, y], true, true);
+                                            };
+                                        });
+                                    });
+                                } else {
+                                    $.each( ret.service_item_list,function(n,key) {
+                                        $.getJSON("{% url 'get_realtime_data' %}",{'client_id':client_id,'service_name':service_name,'key':key},function(sub_data) {
+                                            console.log(sub_data);
+                                            var x = sub_data[0];
+                                            var y = sub_data[1];
+                                            if (typeof (series[n]) != "undefined") {
+                                                series[n].addPoint([x, y], true, true);
+                                            };
+                                        });
+                                    });
+                                };
+                            });
+                        }, 1000 * 2);
+                    }
+                }
+            },
+            rangeSelector: {
+                enabled: false
+            },
+            legend: {
+                enabled: true,
+                layout: 'horizontal'
+            },
+            tooltip: {
+                pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b> ({point.change}%)<br/>',
+                valueDecimals: 2
+            },
+            series: seriesOptions
+        });
+    };
+
+    function gen_service_graph(service_name,time_range){
+        var count_dic = new Array();
+        var seriesOptions = new Array();
+        var service_key_length = new Array();
+
+        $.getJSON("{% url 'get_service_item' %}",{'client_id':client_id,'service_name':service_name},function(ret) {
+            count_dic[service_name] = 0;
+            seriesOptions[service_name] = new Array();
+            if (ret.has_sub_service == true) {
+                $.each( ret.sub_services,function(n,sub_key) {
+                    var sub_count_dic = new Array();
+                    sub_count_dic[sub_key] = 0;
+                    var sub_service_key_length = new Array()
+                    sub_service_key_length[service_name] = new Array()
+                    sub_service_key_length[service_name][sub_key] =  ret.service_item_list.length;
+                    $.each( ret.service_item_list,function(n,key) {
+                        var data = {
+                            'client_id':client_id,
+                            'service_name':service_name,
+                            'sub_key':sub_key,
+                            'key':key,
+                            'time_range':time_range
+                        }
+                        $.getJSON("{% url 'get_service_item_data' %}",data,function(service_item_data) {
+                            sub_count_dic[sub_key] += 1;
+                            seriesOptions[service_name][n] = {
+                                name: key,
+                                data: service_item_data
+                            };
+                            if (sub_count_dic[sub_key] === sub_service_key_length[service_name][sub_key] ){
+                                if (time_range == 'realtime') {
+                                    createDynamicChart(seriesOptions[service_name],'container_'+service_name+'_'+sub_key,service_name,sub_key);
+                                } else {
+                                    createChart(seriesOptions[service_name],'container_'+service_name+'_'+sub_key);
+                                };
+                            };
+                        });
+                    });
+
+                });
+            } else {
+                service_key_length[service_name] = ret.service_item_list.length;
+                $.each( ret.service_item_list,function(n,key) {
+                    var data = {
+                        'client_id':client_id,
+                        'service_name':service_name,
+                        'key':key,
+                        'time_range':time_range
+                    };
+                    $.getJSON("{% url 'get_service_item_data' %}",data,function(service_item_data) {
+                        seriesOptions[service_name][n] = {
+                            name: key,
+                            data: service_item_data
+                        };
+                        count_dic[service_name] += 1;
+                        if (count_dic[service_name] === service_key_length[service_name] ) {
+                            if (time_range == 'realtime') {
+                                createDynamicChart(seriesOptions[service_name], 'container_' + service_name,service_name,null);
+                            } else {
+                                createChart(seriesOptions[service_name], 'container_' + service_name);
+                            };
+                        };
+                    });
+                });
+            };
+        });
+    };
+
+    function display_according_timerange(arg) {
+        if (typeof interval_fun !== 'undefined') {
+            clearInterval(interval_fun);
+        }
+        var container = $(arg).parent().next();
+        var container_id = container.attr("id");
+        var service_name = $(arg).attr("service_name");
+        var time_range=$(arg).attr("time_range");
+        var sub_service_name = $(arg).attr("sub_service_name");
+        gen_service_graph(service_name,time_range);
+    };
+
+    $(function () {
+        $.each(service_list,function(n,service_name) {
+            gen_service_graph(service_name,'latest');
+        });
+    });
+
+    window.onbeforeunload = onbeforeunload_handler;
+    window.onunload = onunload_handler;
+    function onbeforeunload_handler(){
+        var warning="确认退出?";
+        alert(warning) ;
+    };
+
+    function onunload_handler() {
+        if (typeof interval_fun !== 'undefined') {
+            clearInterval(interval_fun);
+        };
+    };
+</script>
+</body>
+
+</html>
