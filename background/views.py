@@ -58,6 +58,8 @@ def graphs_gerator(request):
 def index(request):
     return  render(request,'index.html',{})
 
+def toastr(request):
+    return  render(request,'toastr.html',{})
 
 def host_list(request):
     host_list = models.Host.objects.all()
@@ -170,5 +172,5 @@ def get_host_alive_status(request):
         host_alive_list = models.Host.objects.all()
         ret = {}
         for h in host_alive_list:
-            ret[h.id]=[h.status,h.get_status_display()]
+            ret[h.id]=[h.status,h.get_status_display(),h.name,h.ip_addr]
         return HttpResponse(json.dumps(ret))

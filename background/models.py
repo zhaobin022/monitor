@@ -28,7 +28,6 @@ class Host(models.Model):
     host_alive_check_interval = models.IntegerField(u"主机存活状态检测间隔", default=30)
     status = models.IntegerField(u'状态',choices=status_choices,default=1)
     memo = models.TextField(u"备注",blank=True,null=True)
-
     def __unicode__(self):
         return self.name
 

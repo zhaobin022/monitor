@@ -30,18 +30,36 @@ class ActionHandler(object):
         self.host_alive_dic = {}
         self.host_alive_dic_update_interval = 20
 
-    def listen_notify_mq_channel(self):
-        try:
-            connection = pika.BlockingConnection(pika.ConnectionParameters(
-                           'localhost'))
-            channel = connection.channel()
-            channel.queue_declare(queue='trigger_notify')
 
-            channel.basic_consume(self.callback, queue='trigger_notify', no_ack=True)
-            print ' [*] Waiting for trigger notify messages. To exit press CTRL+C'
-            channel.start_consuming()
-        except KeyboardInterrupt:
-            sys.exit("normal exit......")
+    def deal_trigger_callback(self,ch, method, properties, body):
+        alert_data = json.loads(body)
+        trigger_id = alert_data.get('trigger_id')
+        client_id = alert_data.get('client_id')
+        if trigger_id:
+            redis_alert_key = 'host_%s_trigger_%s' %(client_id,trigger_id)
+            alert_data_in_redis = self.redis_obj.get(redis_alert_key)
+            if alert_data_in_redis:
+                alert_data = json.loads(alert_data_in_redis)
+                if alert_data['status'] == True:
+                    if not alert_data.has_key('alert_count'):
+                        alert_data['alert_count'] = 0
+                        alert_data['last_alert_time'] = 0
+                self.redis_obj.set(redis_alert_key,json.dumps(alert_data))
+            self.iter_action(redis_alert_key,alert_data)
+
+        else:
+            print 'invaild alert data format .'
+
+
+    def listen_notify_mq_channel(self):
+        connection = pika.BlockingConnection(pika.ConnectionParameters(
+                       'localhost'))
+        channel = connection.channel()
+        channel.queue_declare(queue='trigger_notify')
+
+        channel.basic_consume(self.deal_trigger_callback, queue='trigger_notify', no_ack=True)
+        print ' [*] Waiting for trigger notify messages. To exit press CTRL+C'
+        channel.start_consuming()
 
 
 
@@ -49,16 +67,17 @@ class ActionHandler(object):
 
         data = json.loads(body)
         client_id = int(data['client_id'])
-        if self.host_alive_dic[client_id].has_key('alive_time_stamp'):
-            self.host_alive_dic[client_id]['alive_time_stamp'] = time.time()
-        if self.host_alive_dic[client_id].has_key('alert_count'):
-            self.host_alive_dic[client_id]['alert_count'] = 0
-        if self.host_alive_dic[client_id].has_key('last_alert_time'):
-            self.host_alive_dic[client_id]['last_alert_time'] = 0
-        host_obj = self.models.Host.objects.get(id=client_id)
-        if host_obj.status != 1:
-            host_obj.status = 1
-            host_obj.save()
+        if self.host_alive_dic.has_key(client_id):
+            if self.host_alive_dic[client_id].has_key('alive_time_stamp'):
+                self.host_alive_dic[client_id]['alive_time_stamp'] = time.time()
+            if self.host_alive_dic[client_id].has_key('alert_count'):
+                self.host_alive_dic[client_id]['alert_count'] = 0
+            if self.host_alive_dic[client_id].has_key('last_alert_time'):
+                self.host_alive_dic[client_id]['last_alert_time'] = 0
+            host_obj = self.models.Host.objects.get(id=client_id)
+            if host_obj.status != 1:
+                host_obj.status = 1
+                host_obj.save()
 
 
 
@@ -155,9 +174,6 @@ class ActionHandler(object):
             listener_host_alive_thread.start()
 
             self.loads_and_refreash_host_alive_dic()
-            # loads_and_refreash_host_alive_dic_thread = threading.Thread(target=self.loads_and_refreash_host_alive_dic)
-            # loads_and_refreash_host_alive_dic_thread.start()
-
 
         except KeyboardInterrupt:
             sys.exit("normal exit......")
@@ -251,24 +267,6 @@ sub_key : %s
                 action_operation_func = getattr(self,'execute_%s' % action_operation.action_type)
                 action_operation_func(action_operation,subject,mail_body)
 
-    def callback(self,ch, method, properties, body):
-        alert_data = json.loads(body)
-        trigger_id = alert_data.get('trigger_id')
-        client_id = alert_data.get('client_id')
-        if trigger_id:
-            redis_alert_key = 'host_%s_trigger_%s' %(client_id,trigger_id)
-            alert_data_in_redis = self.redis_obj.get(redis_alert_key)
-            if alert_data_in_redis:
-                alert_data = json.loads(alert_data_in_redis)
-                if alert_data['status'] == True:
-                    if not alert_data.has_key('alert_count'):
-                        alert_data['alert_count'] = 0
-                        alert_data['last_alert_time'] = 0
-                self.redis_obj.set(redis_alert_key,json.dumps(alert_data))
-            self.iter_action(redis_alert_key,alert_data)
-
-        else:
-            print 'invaild alert data format .'
 
 
 if __name__ == '__main__':
@@ -287,7 +285,3 @@ if __name__ == '__main__':
         pass
     else:
         parser.print_help()
-
-
-
-

@@ -9,12 +9,12 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link href="/static/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
     <link href="/static/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
-
     <!-- Data Tables -->
     <link href="/static/css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
-
     <link href="/static/css/animate.min.css" rel="stylesheet">
     <link href="/static/css/style.min.css?v=4.1.0" rel="stylesheet">
+    <!-- Toastr -->
+    <link href="/static/css/plugins/toastr/toastr.min.css" rel="stylesheet">
 
 </head>
 
@@ -95,8 +95,17 @@
     <script src="/static/js/plugins/dataTables/jquery.dataTables.js"></script>
     <script src="/static/js/plugins/dataTables/dataTables.bootstrap.js"></script>
     <script src="/static/js/content.min.js?v=1.0.0"></script>
+    <script src="/static/js/plugins/toastr/toastr.min.js"></script>
+
     <script>
         $(document).ready(function () {
+            /*
+            toastr.options = {
+                progressBar: true,
+            };
+            toastr.options.timeOut = 60000;
+            toastr.error("Without any options", "Simple notification!");
+            */
             $(".dataTables-example").dataTable();
             host_status_dic = null;
             setInterval(function () {
@@ -115,8 +124,10 @@
                                 console.log("change status ");
                                 $(td).html(host_status_dic[parseInt(host_id)][1]);
                                 if (host_status_dic[parseInt(host_id)][0] == 4) {
+                                    toastr.error(host_status_dic[parseInt(host_id)][1],"HOST:"+host_status_dic[parseInt(host_id)][2] );
                                     $(td).attr("style","background-color: red;color:white")
                                 } else {
+                                    toastr.success(host_status_dic[parseInt(host_id)][1], "HOST:"+host_status_dic[parseInt(host_id)][2]);
                                     $(td).attr("style","background-color: green;color:white")
                                 };
                             };

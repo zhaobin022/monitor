@@ -23,5 +23,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api/', include(api_url)),
     url(r'^$', views.index),
+    url(r'^toastr$', views.toastr),
     url(r'^front/', include(front_url)),
 ]

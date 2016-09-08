@@ -33107,3 +33107,140 @@ Traceback (most recent call last):
 KeyError: u'lo'
 [2016-09-06 07:26:30,037][404][<WSGIRequest: GET '/front/host_list/favicon.ico'>] Not Found: /front/host_list/favicon.ico
 [2016-09-06 07:26:32,214][404][<WSGIRequest: GET '/front/host_detail/1/favicon.ico'>] Not Found: /front/host_detail/1/favicon.ico
+[2016-09-07 06:03:47,807][404][<WSGIRequest: GET '/favicon.ico'>] Not Found: /favicon.ico
+[2016-09-07 06:22:51,605][404][<WSGIRequest: GET '/toastr.js.map'>] Not Found: /toastr.js.map
+[2016-09-07 06:23:51,180][404][<WSGIRequest: GET '/toastr.js.map'>] Not Found: /toastr.js.map
+[2016-09-07 06:23:55,934][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 45, in service_data_report
+    alert_handler.process()
+  File "/opt/monitor/background/alert_handler.py", line 105, in process
+    expression_ret = self.deal_expression(expression)
+  File "/opt/monitor/background/alert_handler.py", line 48, in deal_expression
+    ret = data_calc_func(data_set,expression)
+  File "/opt/monitor/background/alert_handler.py", line 84, in get_avg
+    ret_dic[key][sub_key].append(float(sub_val))
+KeyError: u'eth0'
+[2016-09-07 06:25:35,114][404][<WSGIRequest: GET '/toastr.js.map'>] Not Found: /toastr.js.map
+[2016-09-07 06:25:39,145][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 45, in service_data_report
+    alert_handler.process()
+  File "/opt/monitor/background/alert_handler.py", line 105, in process
+    expression_ret = self.deal_expression(expression)
+  File "/opt/monitor/background/alert_handler.py", line 48, in deal_expression
+    ret = data_calc_func(data_set,expression)
+  File "/opt/monitor/background/alert_handler.py", line 84, in get_avg
+    ret_dic[key][sub_key].append(float(sub_val))
+KeyError: u'eth0'
+[2016-09-07 06:25:42,147][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 45, in service_data_report
+    alert_handler.process()
+  File "/opt/monitor/background/alert_handler.py", line 105, in process
+    expression_ret = self.deal_expression(expression)
+  File "/opt/monitor/background/alert_handler.py", line 48, in deal_expression
+    ret = data_calc_func(data_set,expression)
+  File "/opt/monitor/background/alert_handler.py", line 84, in get_avg
+    ret_dic[key][sub_key].append(float(sub_val))
+KeyError: u'eth0'
+[2016-09-07 07:47:11,602][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 45, in service_data_report
+    alert_handler.process()
+  File "/opt/monitor/background/alert_handler.py", line 105, in process
+    expression_ret = self.deal_expression(expression)
+  File "/opt/monitor/background/alert_handler.py", line 48, in deal_expression
+    ret = data_calc_func(data_set,expression)
+  File "/opt/monitor/background/alert_handler.py", line 84, in get_avg
+    ret_dic[key][sub_key].append(float(sub_val))
+KeyError: u'eth0'
+[2016-09-07 07:48:04,219][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 45, in service_data_report
+    alert_handler.process()
+  File "/opt/monitor/background/alert_handler.py", line 105, in process
+    expression_ret = self.deal_expression(expression)
+  File "/opt/monitor/background/alert_handler.py", line 48, in deal_expression
+    ret = data_calc_func(data_set,expression)
+  File "/opt/monitor/background/alert_handler.py", line 84, in get_avg
+    ret_dic[key][sub_key].append(float(sub_val))
+KeyError: u'eth0'
+[2016-09-07 07:48:07,220][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 45, in service_data_report
+    alert_handler.process()
+  File "/opt/monitor/background/alert_handler.py", line 105, in process
+    expression_ret = self.deal_expression(expression)
+  File "/opt/monitor/background/alert_handler.py", line 48, in deal_expression
+    ret = data_calc_func(data_set,expression)
+  File "/opt/monitor/background/alert_handler.py", line 84, in get_avg
+    ret_dic[key][sub_key].append(float(sub_val))
+KeyError: u'eth0'
+[2016-09-07 10:20:39,790][500][<WSGIRequest: POST '/api/client/service/report/'>] Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 45, in service_data_report
+    alert_handler.process()
+  File "/opt/monitor/background/alert_handler.py", line 105, in process
+    expression_ret = self.deal_expression(expression)
+  File "/opt/monitor/background/alert_handler.py", line 48, in deal_expression
+    ret = data_calc_func(data_set,expression)
+  File "/opt/monitor/background/alert_handler.py", line 84, in get_avg
+    ret_dic[key][sub_key].append(float(sub_val))
+KeyError: u'eth0'
