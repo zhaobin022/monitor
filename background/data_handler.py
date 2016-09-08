@@ -121,7 +121,11 @@ class DataHandler(object):
             last_point_from_redis = json.loads(last_point_from_redis[0])
             last_update_time = last_point_from_redis[1]
             if interval == 0:
-                self.redis_obj.rpush(current_redis_key,json.dumps([self.data,time.time()] ))
+                if self.data.has_key("data"):
+                    if self.data["data"]:
+                        self.redis_obj.rpush(current_redis_key,json.dumps([self.data,time.time()] ))
+                else:
+                    self.redis_obj.rpush(current_redis_key,json.dumps([self.data,time.time()] ))
             else:
                 if time.time() - last_update_time > interval:
                     lastest_data_key_in_redis = "StatusData_%s_%s_latest" %(self.client_id,self.service_name)
