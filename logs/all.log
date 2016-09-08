@@ -9817,3 +9817,210 @@ Traceback (most recent call last):
     ret_dic[key][sub_key].append(float(sub_val))
 KeyError: u'eth0'
 [2016-09-07 10:20:39,854][task_id:django.server][basehttp.py:131] [ERROR]- "POST /api/client/service/report/ HTTP/1.1" 500 101172
+[2016-09-08 02:41:53,415][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/client/config/1 HTTP/1.1" 301 0
+[2016-09-08 02:41:53,424][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/client/config/1/ HTTP/1.1" 200 131
+[2016-09-08 02:41:53,446][task_id:django.server][basehttp.py:131] [INFO]- "POST /api/client/service/report/ HTTP/1.1" 200 19
+[2016-09-08 02:41:56,448][task_id:django.server][basehttp.py:131] [INFO]- "POST /api/client/service/report/ HTTP/1.1" 200 19
+[2016-09-08 02:41:58,450][task_id:django.server][basehttp.py:131] [INFO]- "POST /api/client/service/report/ HTTP/1.1" 200 19
+[2016-09-08 02:42:03,439][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/client/config/1 HTTP/1.1" 301 0
+[2016-09-08 02:42:03,446][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/client/config/1/ HTTP/1.1" 200 131
+[2016-09-08 02:42:03,470][task_id:django.server][basehttp.py:131] [INFO]- "POST /api/client/service/report/ HTTP/1.1" 200 19
+[2016-09-08 02:42:06,471][task_id:django.server][basehttp.py:131] [INFO]- "POST /api/client/service/report/ HTTP/1.1" 200 19
+[2016-09-08 02:42:08,475][task_id:django.server][basehttp.py:131] [INFO]- "POST /api/client/service/report/ HTTP/1.1" 200 19
+[2016-09-08 02:42:13,462][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/client/config/1 HTTP/1.1" 301 0
+[2016-09-08 02:42:13,470][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/client/config/1/ HTTP/1.1" 200 131
+[2016-09-08 02:42:13,487][task_id:django.server][basehttp.py:131] [INFO]- "POST /api/client/service/report/ HTTP/1.1" 200 19
+[2016-09-08 02:42:16,490][task_id:django.server][basehttp.py:131] [INFO]- "POST /api/client/service/report/ HTTP/1.1" 200 19
+[2016-09-08 02:42:18,492][task_id:django.server][basehttp.py:131] [INFO]- "POST /api/client/service/report/ HTTP/1.1" 200 19
+[2016-09-08 02:42:19,609][task_id:django.server][basehttp.py:131] [INFO]- "GET / HTTP/1.1" 200 30121
+[2016-09-08 02:42:19,703][task_id:django.server][basehttp.py:131] [INFO]- "GET /front/host_list/ HTTP/1.1" 200 7538
+[2016-09-08 02:42:20,421][task_id:django.template][base.py:929] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[2016-09-08 02:42:20,422][task_id:django.template][base.py:929] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'background.api_url' from '/opt/monitor/background/api_url.pyc'> (None:None) ^api/>"
+[2016-09-08 02:42:20,422][task_id:django.template][base.py:929] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'background.front_url' from '/opt/monitor/background/front_url.pyc'> (None:None) ^front/>"
+[2016-09-08 02:42:20,423][task_id:django.request][base.py:152] [WARNING]- Not Found: /favicon.ico
+[2016-09-08 02:42:20,423][task_id:django.server][basehttp.py:131] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 2368
+[2016-09-08 02:42:22,402][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 101
+[2016-09-08 02:42:23,485][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/client/config/1 HTTP/1.1" 301 0
+[2016-09-08 02:42:23,492][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/client/config/1/ HTTP/1.1" 200 131
+[2016-09-08 02:42:23,510][task_id:django.server][basehttp.py:131] [INFO]- "POST /api/client/service/report/ HTTP/1.1" 200 19
+[2016-09-08 02:42:24,401][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 101
+[2016-09-08 02:42:26,316][task_id:django.server][basehttp.py:131] [INFO]- "POST /api/client/service/report/ HTTP/1.1" 200 10
+[2016-09-08 02:42:26,326][task_id:django.request][exception.py:124] [ERROR]- Internal Server Error: /api/client/service/report/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/opt/monitor/background/views.py", line 45, in service_data_report
+    alert_handler.process()
+  File "/opt/monitor/background/alert_handler.py", line 105, in process
+    expression_ret = self.deal_expression(expression)
+  File "/opt/monitor/background/alert_handler.py", line 48, in deal_expression
+    ret = data_calc_func(data_set,expression)
+  File "/opt/monitor/background/alert_handler.py", line 84, in get_avg
+    ret_dic[key][sub_key].append(float(sub_val))
+KeyError: u'eth0'
+[2016-09-08 02:42:26,385][task_id:django.server][basehttp.py:131] [ERROR]- "POST /api/client/service/report/ HTTP/1.1" 500 94678
+[2016-09-08 02:42:26,398][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 101
+[2016-09-08 02:42:28,472][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 101
+[2016-09-08 02:42:30,402][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 101
+[2016-09-08 02:42:32,399][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 101
+[2016-09-08 02:42:34,402][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 101
+[2016-09-08 02:42:36,405][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 101
+[2016-09-08 02:42:38,402][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 101
+[2016-09-08 02:42:40,402][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 101
+[2016-09-08 02:42:42,403][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 101
+[2016-09-08 02:42:44,402][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 101
+[2016-09-08 02:42:46,398][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 101
+[2016-09-08 02:42:48,405][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 101
+[2016-09-08 02:42:50,410][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 101
+[2016-09-08 02:42:52,398][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 101
+[2016-09-08 02:42:54,402][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:42:56,405][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:42:58,406][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:43:00,403][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:43:02,560][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:43:04,551][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:43:06,555][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:43:08,553][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:43:10,552][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:43:12,563][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:43:14,553][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:43:16,552][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:43:18,555][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:43:20,554][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:43:22,554][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:43:24,556][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:43:26,553][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:43:28,548][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:43:30,569][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:43:32,553][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:43:34,554][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:43:36,549][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:43:38,557][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:43:40,563][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:43:42,564][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:43:44,554][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:43:46,555][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:43:48,548][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:43:50,549][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:43:52,553][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:43:54,549][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:43:56,552][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:43:58,552][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:44:00,553][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:44:02,552][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:44:04,555][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:44:06,554][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:44:08,548][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:44:10,554][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:44:12,568][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:44:14,551][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:44:16,555][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:44:18,554][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:44:20,549][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:44:22,548][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:44:24,552][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:44:26,554][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:44:28,555][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:44:30,549][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:44:32,554][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:44:34,555][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:44:36,620][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:44:38,552][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:44:40,554][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:44:42,556][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:44:44,553][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:44:46,549][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:44:48,553][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:44:50,553][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:44:52,548][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:44:54,549][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:44:56,553][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:44:58,554][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:45:00,552][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:45:02,554][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:45:04,555][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:45:06,552][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:45:08,553][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:45:10,554][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:45:12,548][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:45:14,556][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:45:16,553][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:45:18,550][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:45:20,554][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:45:22,553][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:45:24,549][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:45:26,400][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:45:28,554][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:45:30,556][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:45:32,549][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:45:34,554][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:45:36,554][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:45:38,549][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:45:40,549][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:45:42,554][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:45:44,548][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:45:46,555][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:45:48,549][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:45:50,554][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:45:52,557][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:45:54,554][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:45:56,549][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:45:58,556][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:46:00,548][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:46:02,549][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:46:04,554][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:46:06,556][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:46:08,553][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:46:10,557][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:46:12,554][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:46:14,553][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:46:16,549][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:46:18,554][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:46:20,553][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:46:22,551][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:46:24,555][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:46:26,554][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:46:28,549][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:46:30,557][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:46:32,557][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:46:34,555][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:46:36,558][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:46:38,555][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:46:40,549][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:46:42,558][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:46:44,554][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:46:46,548][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:46:48,549][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:46:50,556][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:46:52,554][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:46:54,554][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:46:56,554][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:46:58,555][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:47:00,549][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:47:02,548][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:47:04,550][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:47:06,549][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:47:08,550][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:47:10,549][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:47:12,550][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:47:14,555][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:47:16,554][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
+[2016-09-08 02:47:18,553][task_id:django.server][basehttp.py:131] [INFO]- "GET /api/get_host_alive_status/ HTTP/1.1" 200 102
